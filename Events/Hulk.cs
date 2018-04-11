@@ -4,8 +4,9 @@ namespace Events
 {
     public class Hulk
     {
-        public Hulk(AvengersEvent avengersEvent)
+        public Hulk()
         {
+            AvengersEvent avengersEvent = new AvengersEvent();
             avengersEvent.Task += new Avengers(Reply);
         }
 
